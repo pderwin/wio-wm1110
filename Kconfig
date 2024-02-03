@@ -1,0 +1,12 @@
+#----------------------------------------
+#
+# Copyright (c) 2024 Phil Erwin
+# SPDX-License-Identifier: Apache-2.0
+#
+#----------------------------------------
+menu "Seeed Tracker Application"
+endmenu
+
+menu "Zephyr Kernel"
+source "$ZEPHYR_BASE/Kconfig.zephyr"
+endmenu
