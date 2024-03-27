@@ -7,7 +7,5 @@
 
 int main(void)
 {
-   printk("Hello World from Seeed Wio-wm1110 !!! \n");
-
    return 0;
 }
