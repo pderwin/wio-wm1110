@@ -24,16 +24,18 @@ set(FIRMWARE_UPDATE_ROOT   $ENV{ZEPHYR_BASE}/../SWTL001 )
 
 set(CONNECTIVITY_TECHNOLOGY $ENV{ZEPHYR_BASE}/../connectivity-technology )
 
+
 set(ZEPHYR_MODULES
   $ENV{ZEPHYR_BASE}/../modules/hal/cmsis
+  $ENV{ZEPHYR_BASE}/../modules/hal/nordic
   )
+
 set(EXTRA_ZEPHYR_MODULES
   ${CONNECTIVITY_TECHNOLOGY}
   ${LORA_BASICS_ROOT}
   ${FIRMWARE_UPDATE_ROOT}
   #	$ENV{ZEPHYR_BASE}/../nrf
-  $ENV{ZEPHYR_BASE}/../modules/hal/nordic
-  $ENV{ZEPHYR_BASE}/../modules/hal/cmsis
+
   $ENV{ZEPHYR_BASE}/../modules/debug/segger
   $ENV{ZEPHYR_BASE}/../modules/crypto/tinycrypt
   #	$ENV{ZEPHYR_BASE}/../nrfxlib
